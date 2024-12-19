@@ -1,0 +1,111 @@
+/*-----------*/
+/*Каталог*/
+/*-----------*/
+
+.catalog{
+    display: flex;
+    padding: 40px 2%
+}
+.catalog h1{
+    font-size: 32px;
+}
+.catalog__left{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+}
+.myBtnContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+}
+.btn{
+    background-color: #fff;
+    color: #0394E6;
+    font-family: Inter;
+    font-size: 16px;
+    border: 1px solid #0394E6;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn.active{
+    background-color: #0394E6;
+    color: #fff;
+}
+.catalog_right{
+    width: 80%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+.filterDiv{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    gap: 20px;
+    display: none;
+    flex-wrap: wrap;
+}
+.show {
+    display: flex;
+}
+.description{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.description h3{
+    font-weight: 500;
+    font-size: 16px;
+}
+.stars{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.price h2{
+    font-weight: 600;
+}
+.price button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #D2D2D2;
+    padding: 5px 10px;
+    gap: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .catalog{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .catalog__left{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .myBtnContainer{
+        flex-direction: row;
+    }
+}
